@@ -8,7 +8,7 @@
 # Site Settings
 title                    : "Zhucun Xue"
 description              : RAG · AIGC · MLLM · Video Understanding
-repository               : "xzc_zju/xzc_zju.github.io"
+repository               : "xzc-zju/xzc-zju.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
