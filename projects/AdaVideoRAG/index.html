@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="AdaVideoRAG">
+  <meta name="keywords" content="RAG, MLLM, Video Understanding">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdaVideoRAG</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./assets/css/index.css">
+  <!-- <link rel="icon" href="../assets/images/favicon-32x32.png"> -->
+  <link rel="icon" href="">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./assets/js/fontawesome.all.min.js"></script>
+  <script src="./assets/js/bulma-carousel.min.js"></script>
+  <script src="./assets/js/bulma-slider.min.js"></script>
+  <script src="./assets/js/index.js"></script>
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://keunhong.com">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+    </div>
+
+  </div>
+</nav> -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- <img src="assets/images/invad_1024.png" class="interpolation-image" alt="logo" width="30%"> -->
+          <!-- <img src="assets/images/vitad_1024.png" class="interpolation-image" alt="logo" style="height: 20% !important;" width="30%"> -->
+          <!-- <h1 class="title is-1 publication-title"><span style="color:#b02418; font-weight:bold;">InvAD:</span> Learning Feature Inversion for Multi-class Unsupervised Anomaly Detection under General-purpose COCO-AD Benchmark</h1> -->
+          <img src="assets/images/logo.png" class="interpolation-image" alt="logo" width="100%">
+          <div class="is-size-5 publication-authors">
+            #Zhucun Xue, Jiangning Zhang, Xurong Xie, yuxuan cai, Yong Liu, Xiangtai Li, Dacheng Tao
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=m3KDreEAAAAJ&hl=en">Zhucun Xue</a><sup>1</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=2hA4X9wAAAAJ&hl=en">Jiangning Zhang†</a><sup>1</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=J9lTFAUAAAAJ&hl=en">Xurong Xie</a><sup>1</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=xiK4nFUAAAAJ&hl=en"> yuxuan cai</a><sup>1</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=qYcgBbEAAAAJ&hl=en">Yong Liu</a><sup>1</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=FL3ReD0AAAAJ&hl=en">Xiangtai Li</a><sup>2</sup>, </span>
+            <span class="author-block"> <a href="https://scholar.google.com/citations?user=RwlJNLcAAAAJ&hl=en">Dacheng Tao</a><sup>2</sup>, </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>Zhejiang University &nbsp </span>
+            <span class="author-block"><sup>2</sup>Nanyang Technological University &nbsp </span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.10760"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/xzc-zju/AdaVideoRAG"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Multimodal Large Language Models (MLLMs) have demonstrated excellent performance in video understanding but suffer from degraded effectiveness when
+processing long videos due to fixed-length contexts and weaknesses in modeling
+long-term dependencies. Retrieval-Augmented Generation (RAG) technology can
+mitigate these limitations through dynamic knowledge expansion, but existing
+RAG schemes for video understanding employ fixed retrieval paradigms that use
+uniform structures regardless of input query difficulty. This introduces redundant
+computational overhead and latency (e.g., complex graph traversal operations)
+for simple queries (e.g., frame-level object recognition) while potentially causing critical information loss due to insufficient retrieval granularity for multi-hop
+reasoning. Such single-step retrieval mechanisms severely constrain the model’s
+balance between resource efficiency and cognitive depth. To address this, we
+first propose a novel AdaVideoRAG framework for long-video understanding,
+which uses a lightweight intent classifier to dynamically and adaptively allocate
+appropriate retrieval schemes—ranging from the simplest to the most sophisticated — for different video understanding tasks based on query complexity. We
+introduce an Omni-Knowledge Indexing module to extract valuable information
+from multi-modal signals for context modeling and build corresponding databases,
+i.e., a text base from clip captions, ASR, and OCR; a visual base; and a graph
+for deep semantic understanding. This enables hierarchical knowledge access,
+integration, and generation from naive retrieval to graph retrieval, achieving an
+optimal balance between resource consumption and video understanding capabilities. Finally, we construct the HiVU benchmark for deep understanding evaluation.
+Extensive experiments show that our framework enhances the overall efficiency and
+accuracy of Video-QA for long videos and can be seamlessly integrated with existing MLLMs via lightweight API calls, establishing a new paradigm for adaptive
+retrieval augmentation in video analysis.
+          </p>
+        </div>
+
+        <div class="columns is-centered interpolation-panel">
+          <div class="column is has-text-centered">
+            <img src="./assets/images/AdaVideoRAG.png"
+                class="interpolation-image"
+                alt="Interpolate start reference image."/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+
+    <!-- Paper video. -->
+    <!-- <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Video</h2>
+        <div class="publication-video">
+          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div> -->
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Motivation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">High-lights</h2>
+        <div class="content has-text-justified">
+          <p>
+            <strong>1) First open-sourced UHD-4K/8K video datasets with comprehensive structured (10 types) captions.</strong> <br>
+            <strong>2) Native 1K/4K videos generation by UltraWAN.</strong> 
+          </p>
+        </div>
+        
+        <div class="columns is-centered interpolation-panel">
+          <div class="column is-8 has-text-centered">
+            <img src="./assets/images/ultravideo.png" style="width: 100% !important;" 
+                class="interpolation-image"
+                alt="Interpolate start reference image."/>
+            <!-- <p>Start Frame</p> -->
+          </div>
+        </div>
+
+        <div class="columns is-centered interpolation-panel">
+          <div class="column is-8 has-text-centered">
+            <img src="./assets/images/dataset_comparison.png" style="width: 100% !important;" 
+                class="interpolation-image"
+                alt="Interpolate start reference image."/>
+            <!-- <p>Start Frame</p> -->
+          </div>
+        </div>
+
+        <div class="columns is-centered interpolation-panel">
+          <div class="column is-8 has-text-centered">
+            <img src="./assets/images/statistic.png" style="width: 100% !important;" 
+                class="interpolation-image"
+                alt="Interpolate start reference image."/>
+            <!-- <p>Start Frame</p> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!--/ Motivation. -->
+
+</div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>
+      <!-- @article{invad,
+        title={Learning Feature Inversion for Multi-class Anomaly Detection under General-purpose COCO-AD Benchmark},
+        author={Jiangning Zhang and Chengjie Wang and Xiangtai Li and Guanzhong Tian and Zhucun Xue and Yong Liu and Guansong Pang and Dacheng Tao},
+        journal={arXiv preprint arXiv:2404.10760},
+        year={2024}
+      } -->
+    </code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="./assets/videos/nerfies_paper.pdf">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+

@@ -48,12 +48,12 @@ I am <strong>Zhucun Xue (薛竹村)</strong>. I'm pursuing Ph.D. degree in Colle
 
 # 📝 Publications
 <ol reversed>
-  <li id="2025-1"> 
+  <li id="2025-5"> 
     A survey on vision-based UAV navigation <a href="https://www.tandfonline.com/doi/full/10.1080/10095020.2017.1420509">[Paper]</a><br> 
     Yuncheng Lu, <span style="color:#b02418; font-weight:bold;">Zhucun Xue</span>, Gui-Song Xia, and Liangpei Zhang<br>
     <i>Geo-spatial information science <strong>(GSIS).</strong></i> 2018.
   </li>
-  <li id="2025-2"> 
+  <li id="2025-4"> 
     Learning to calibrate straight lines for fisheye image rectification <a href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Xue_Learning_to_Calibrate_Straight_Lines_for_Fisheye_Image_Rectification_CVPR_2019_paper.pdf">[Paper]</a><br> 
     <span style="color:#b02418; font-weight:bold;">Zhucun Xue</span>, Nan Xue, Gui-Song Xia and Weiming Shen<br>
     <i>Computer Vision and Pattern Recognition <strong>(CVPR).</strong></i> 2019.
@@ -63,17 +63,12 @@ I am <strong>Zhucun Xue (薛竹村)</strong>. I'm pursuing Ph.D. degree in Colle
     Jiangning Zhang, Xiangtai Li, Jian Li, Liang Liu, <span style="color:#b02418; font-weight:bold;">Zhucun Xue</span>, Boshen Zhang, Zhengkai Jiang, Tianxin Huang, Yabiao Wang, and Chengjie Wang<br>
     <i> International Conference on Computer Vision <strong>(ICCV).</strong></i> 2023.
   </li>
-  <li id="2025-4"> 
+  <li id="2025-2"> 
     Apb2face: Audio-guided face reenactment with auxiliary pose and blink signals <a href="https://arxiv.org/pdf/2004.14569">[Paper]</a><br> 
     Jiangning Zhang, Liang Liu, <span style="color:#b02418; font-weight:bold;">Zhucun Xue</span>, and Yong Liu<br>
     <i> International Conference on Acoustics, Speech and Signal Processing <strong>(ICASSP).</strong></i> 2020.
   </li>
-  <li id="2025-4"> 
-    Gpt-4v-ad: Exploring grounding potential of vqa-oriented gpt-4v for zero-shot anomaly detection <a href="https://arxiv.org/pdf/2311.02612">[Paper]</a><br> 
-    Jiangning Zhang, Haoyang He, Xuhai Chen, <span style="color:#b02418; font-weight:bold;">Zhucun Xue</span>, Yabiao Wang, Chengjie Wang, Lei Xie, and Yong Liu<br>
-    <i> International Joint Conference on Artificial Intelligence <strong>(IJCAI).</strong></i> 2024.
-  </li>
-  <li id="2025-4"> 
+  <li id="2025-1"> 
     Gpt-4v-ad: Exploring grounding potential of vqa-oriented gpt-4v for zero-shot anomaly detection <a href="https://arxiv.org/pdf/2311.02612">[Paper]</a><br> 
     Jiangning Zhang, Haoyang He, Xuhai Chen, <span style="color:#b02418; font-weight:bold;">Zhucun Xue</span>, Yabiao Wang, Chengjie Wang, Lei Xie, and Yong Liu<br>
     <i> International Joint Conference on Artificial Intelligence <strong>(IJCAI).</strong></i> 2024.
