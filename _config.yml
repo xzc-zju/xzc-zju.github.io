@@ -6,9 +6,9 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Jiangning Zhang"
-description              : AIGC · MLLM · 3D Motion · Virtual Digital Human
-repository               : "zhangzjn/zhangzjn.github.io"
+title                    : "Zhucun Xue"
+description              : RAG · AIGC · MLLM · Video Understanding
+repository               : "xzc_zju/xzc_zju.github.io"
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -21,14 +21,14 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 
 # Site Author
 author:
-  name             : "Jiangning Zhang"
-  avatar           : "images/zhangzjn-512x512.jpg"
-  bio              : "Photograph by my loved wife: Ms. Xue"  # "Ph.D. under Zhejiang University"   fiancee -> wife, 2023.10.02
-  location         : "Shanghai, China"
+  name             : "Zhucun Xue"
+  avatar           : "images/xzc_images.jpg"
+  bio              :  # "Ph.D. under Zhejiang University"   fiancee -> wife, 2023.10.02
+  location         : "Hangzhou, China"
   employer         : 
   pubmed           : 
-  googlescholar    : "https://scholar.google.com.hk/citations?user=2hA4X9wAAAAJ&hl=zh-CN"
-  email            : "186368@zju.edu.cn"
+  googlescholar    : "https://scholar.google.com.hk/citations?user=m3KDreEAAAAJ&hl=zh-CN"
+  email            : "12432038@zju.edu.cn"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -37,15 +37,15 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "zhangzjn"
+  github           : "xzc_zju"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : # e.g., "https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         : # e.g., "linkedin username"
-  dblp             : "https://dblp.org/pid/241/9593.html"
-  orcid            : "https://orcid.org/0000-0001-8891-6766"
+  dblp             : # "https://dblp.org/pid/241/9593.html"
+  orcid            : # "https://orcid.org/0000-0001-8891-6766"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
